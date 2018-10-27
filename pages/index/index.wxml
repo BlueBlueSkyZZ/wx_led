@@ -3,7 +3,7 @@
     LED遥光控制
 </view>
 <view>
-  <view wx:if="{{deviceConnected}}">
+  <view wx:if='{{deviceConnected}}'>
     设备已经连接
   </view>
   <view wx:else>
@@ -12,10 +12,10 @@
 </view>
 <view class="container">
   <view class="switch_info">
-    <switch class='switch_style' id='yellow_led' checked='{{true}}' bindchange='change'>黄色</switch>
-    <switch class='switch_style' id='blue_led' bindchange='change'>蓝色</switch>
-    <switch class='switch_style' id='green_led' bindchange='change'>绿色</switch>
-    <switch class='switch_style' id='red_led' bindchange='change'>红色</switch>
-    <switch class='switch_style' id='beep' bindchange='change'>喇叭</switch>
+    <switch class='switch_style' id='yellow_led' checked='{{yellow_checked}}' bindchange='change'>黄色</switch>
+    <switch class='switch_style' id='blue_led' checked='{{blue_checked}}' bindchange='change'>蓝色</switch>
+    <switch class='switch_style' id='green_led' checked='{{green_checked}}' bindchange='change'>绿色</switch>
+    <switch class='switch_style' id='red_led' checked='{{red_checked}}' bindchange='change'>红色</switch>
+    <switch class='switch_style' id='beep' checked='{{beep_checked}}' bindchange='change'>喇叭</switch>
   </view>
 </view>
