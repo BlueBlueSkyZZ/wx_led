@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class='header'>
+    LED遥光控制
+</view>
+<view>
+  <view wx:if="{{deviceConnected}}">
+    设备已经连接
+  </view>
+  <view wx:else>
+    设备还未连接
+  </view>
+</view>
+<view class="container">
+  <view class="switch_info">
+    <switch class='switch_style' id='yellow_led' checked='{{true}}' bindchange='change'>黄色</switch>
+    <switch class='switch_style' id='blue_led' bindchange='change'>蓝色</switch>
+    <switch class='switch_style' id='green_led' bindchange='change'>绿色</switch>
+    <switch class='switch_style' id='red_led' bindchange='change'>红色</switch>
+    <switch class='switch_style' id='beep' bindchange='change'>喇叭</switch>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+/**index.wxss**/
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+}
+
+.switch_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.switch_style {
+  margin-top: 15px;
+}
+
+.connected {
+  color: green;
+  font-size: 50px;
+}
+
+.unconnnected {
+  color: red
+}
